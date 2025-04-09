@@ -94,3 +94,6 @@ app.post("/send-email", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
+app.get("/", (req, res) => {
+ res.sendFile("index.html", { root: "public" });
+});
