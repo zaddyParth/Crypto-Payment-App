@@ -95,5 +95,5 @@ app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
 app.get("/", (req, res) => {
- res.sendFile("index.html", { root: "public" });
+ res.sendFile("crypto payment.html", { root: "public" });
 });
